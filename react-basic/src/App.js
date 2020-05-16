@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Button from './Components/Button.js'
+import Counter from './Components/Counter'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           Learn React
         </a>
         <Button name="click here to get information" infor="Nguyen Vu Anh Duy" />
+        <Counter />
       </header>
     </div>
   );
