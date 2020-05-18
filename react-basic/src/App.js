@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Button from './Components/Button.js'
-import Counter from './Components/Counter'
+import Counter from './Components/Counter';
+import Toggle from './Components/Toggle';
+import Login from './Components/Login';
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
         >
           Learn React
         </a>
-        <Button name="click here to get information" infor="Nguyen Vu Anh Duy" />
         <Counter />
+        <Login />
+        <Toggle info="Anh Duy" />
       </header>
     </div>
   );
