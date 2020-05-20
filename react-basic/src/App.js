@@ -1,29 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
+
 import './App.css';
-import Counter from './Components/Counter';
-import Toggle from './Components/Toggle';
-import Login from './Components/Login';
+
+// import Counter from './Components/Counter';
+// import Toggle from './Components/Toggle';
+// import Login from './Components/Login';
+// import List from './Components/List';
+import Form from './Components/Form';
+
+// const animals = ["dog", "cat", "lion", "tiger", "dinosaur"];
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Counter />
-        <Login />
-        <Toggle info="Anh Duy" />
+        <Form />
+        {/* <Counter />
+        <Toggle info="Anh Duy" /> 
+        <List animals={animals} />
+        */}
       </header>
     </div>
   );
