@@ -13,7 +13,7 @@ class Form extends React.Component {
     // event.target.value : lay value tai noi goi ham handleChange
     this.setState({
       // event.target.name : property
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   }
 

@@ -36,21 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.Toggle {
-  margin: 20px;
-  padding: 10px;
-  background-color: green;
-  color: white;
-  width: 150px;
-}
-
-.Up {
-  background-color: green;
-  color: red;
-}
-
-.Down {
-  background-color: blue;
-  color: white;
-}
