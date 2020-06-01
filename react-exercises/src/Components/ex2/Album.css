@@ -1,12 +1,13 @@
 .Album img {
-    padding-top: 15px;
-    width: 150px;
-    height: 150px;
+  padding-top: 15px;
+  width: 150px;
+  height: 150px;
 }
 
 .Album button {
-    width: 75px;
-    height: 30px;
-    font-size: 20px;
-    color: red;
+  text-align: center;
+  width: 75px;
+  height: 30px;
+  font-size: 20px;
+  color: red;
 }

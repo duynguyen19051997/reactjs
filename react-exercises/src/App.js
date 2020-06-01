@@ -1,8 +1,11 @@
 import React from "react";
+
 import logo from "./logo.svg";
 import "./App.css";
+
 import Button from "./Components/ex1/Button";
 import Album from "./Components/ex2/Album";
+import ImageInterval from "./Components/ex3/ImageInterval";
 
 function App() {
   return (
@@ -11,6 +14,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <Button />
         <Album />
+        <ImageInterval />
       </header>
     </div>
   );

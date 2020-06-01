@@ -1,5 +1,6 @@
 import React from "react";
 import "./Button.css";
+import "../../App.css";
 
 class Button extends React.Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class Button extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="Exercise">
         <button className="Exercise1" onClick={this.handleSubmit}>
           Hello {this.state.number}
         </button>

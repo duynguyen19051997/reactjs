@@ -1,5 +1,6 @@
 import React from "react";
 import "./Album.css";
+import "../../App.css";
 
 import {
   image_1,
@@ -40,8 +41,8 @@ class Album extends React.Component {
 
   render() {
     return (
-      <div className="Album">
-        <img src={this.state.img} />
+      <div className="Album Exercise">
+        <img src={this.state.img} title="Change Image OnClick" />
         <br />
         <button
           onClick={() => {
