@@ -8,27 +8,45 @@ import "./List.css";
 class List extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { animals: ["Dog", "Cat", "Tiger", "Lion"] };
+    this.state = { animals: [] };
   }
 
   add = () => {
-    this.state.animals.push("Duy");
+    this.state.animals.push(this.refs.animal.value);
     this.setState(this.state);
   };
 
   delete = () => {
-    this.state.animals.pop();
+    let pos = this.state.animals.indexOf(this.refs.animal.value);
+    this.state.animals.splice(pos, 1);
     this.setState(this.state);
   };
 
   render() {
     return (
       <div className="Exercise">
-        <button onClick={this.add}>Add</button>
-        <button onClick={this.delete}>Delete</button>
-        {this.state.animals.map((val, index) => (
-          <Note key={index}>{val}</Note>
-        ))}
+        <table className="Table">
+          <tr>
+            <td>
+              <input type="text" ref="animal" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button className="Button" onClick={this.add}>
+                Add
+              </button>
+              <button className="Button" onClick={this.delete}>
+                Delete
+              </button>
+            </td>
+          </tr>
+        </table>
+        <ul>
+          {this.state.animals.map((val, index) => (
+            <Note key={index}>{val}</Note>
+          ))}
+        </ul>
       </div>
     );
   }
