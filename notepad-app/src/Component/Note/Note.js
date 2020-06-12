@@ -11,17 +11,25 @@ class Note extends React.Component {
     return (
       <Row>
         <Col md={10}>
-          <ListGroup.Item action variant="success" className="Note">
+          <ListGroup.Item striped bordered hover action className="Note">
             {this.props.children}
           </ListGroup.Item>
         </Col>
         <Col className="Col-Custome" md={1}>
-          <Button className="Button-Custome" title="Update" variant="success">
+          <Button
+            className="Button-Custome"
+            title="Update"
+            variant="outline-primary"
+          >
             <i class="fa fa-pencil" aria-hidden="true"></i>
           </Button>
         </Col>
         <Col md={1}>
-          <Button className="Button-Custome" title="Delete" variant="danger">
+          <Button
+            className="Button-Custome"
+            title="Delete"
+            variant="outline-danger"
+          >
             <i class="fa fa-times" aria-hidden="true"></i>
           </Button>
         </Col>

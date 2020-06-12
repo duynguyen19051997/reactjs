@@ -16,7 +16,7 @@ class FormCustome extends React.Component {
             </Form.Group>
           </Col>
           <Col sm={2}>
-            <Button variant="warning" type="submit">
+            <Button variant="outline-warning" type="submit">
               Save
             </Button>
           </Col>
