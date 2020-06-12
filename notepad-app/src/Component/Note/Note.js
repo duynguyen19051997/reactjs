@@ -1,16 +1,31 @@
 import React from "react";
 
-import { ListGroup } from "react-bootstrap";
+import { ListGroup, Col, Row, Button } from "react-bootstrap";
 
+import "font-awesome/css/font-awesome.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Note/Note.css";
 
 class Note extends React.Component {
   render() {
     return (
-      <ListGroup.Item action variant="success" className="Note">
-        {this.props.children}
-      </ListGroup.Item>
+      <Row>
+        <Col md={10}>
+          <ListGroup.Item action variant="success" className="Note">
+            {this.props.children}
+          </ListGroup.Item>
+        </Col>
+        <Col className="Col-Custome" md={1}>
+          <Button className="Button-Custome" title="Update" variant="success">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+          </Button>
+        </Col>
+        <Col md={1}>
+          <Button className="Button-Custome" title="Delete" variant="danger">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </Button>
+        </Col>
+      </Row>
     );
   }
 }

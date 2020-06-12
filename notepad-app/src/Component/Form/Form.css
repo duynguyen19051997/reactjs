@@ -1,0 +1,15 @@
+.Form {
+  padding-top: 5px;
+}
+
+.Input-CSS {
+  width: 415px;
+  padding-left: 5px;
+}
+
+.Button-CSS {
+  padding: 5px;
+  position: absolute;
+  top: 26px;
+  right: 454px;
+}

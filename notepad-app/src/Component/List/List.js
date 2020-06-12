@@ -15,7 +15,7 @@ class List extends React.Component {
   }
   render() {
     return (
-      <ListGroup className="List">
+      <ListGroup>
         {this.state.todos.map((val, index) => (
           <Note key={index}>{val.name}</Note>
         ))}

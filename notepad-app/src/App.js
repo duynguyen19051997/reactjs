@@ -1,32 +1,22 @@
 import React from "react";
 
-import { Container, Button, Row, Col, Form } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import List from "../src/Component/List/List";
+import ButtonCustome from "../src/Component/Button/Button";
+import FormCustome from "../src/Component/Form/Form";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-function App() {
-  return (
-    <Container fluid="sm" className="main">
-      <Row>
-        <Col>
-          <Button className="Row" variant="warning">
-            +
-          </Button>
-        </Col>
-      </Row>
-      <Form className="Form">
-        <Form.Group controlId="formBasicPassword">
-          <Form.Control type="text" placeholder="Todo" />
-        </Form.Group>
-        <Button className="Button" variant="warning" type="submit">
-          Save
-        </Button>
-      </Form>
-      <List></List>
-    </Container>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <Container className="main">
+        <FormCustome />
+        <List />
+      </Container>
+    );
+  }
 }
 
 export default App;
