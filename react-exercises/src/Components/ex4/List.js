@@ -19,7 +19,7 @@ class List extends React.Component {
   delete = () => {
     let pos = this.state.animals.indexOf(this.refs.animal.value);
     this.state.animals.splice(pos, 1);
-    this.setState(this.state);
+    this.setState(this.state.animals);
   };
 
   render() {
