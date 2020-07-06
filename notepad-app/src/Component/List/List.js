@@ -7,16 +7,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../List/List.css";
 
 class List extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      todos: [{ name: "Football" }, { name: "Coding" }, { name: "Java" }],
-    };
-  }
   render() {
     return (
       <ListGroup>
-        {this.state.todos.map((val, index) => (
+        {this.props.todos.map((val, index) => (
           <Note key={index}>{val.name}</Note>
         ))}
       </ListGroup>
